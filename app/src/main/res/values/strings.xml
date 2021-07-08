@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EconomicsApp</string>
+    <string name="start">start</string>
+    <string name="next">next</string>
+    <string name="start_quiz">start quiz</string>
+    <string name="nzqa">NZQA</string>
+</resources>
