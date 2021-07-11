@@ -51,6 +51,7 @@ public class Quiz extends AppCompatActivity {
         tvQuestionNo = findViewById(R.id.textQuestionsNo);
         tvTimer = findViewById(R.id.textTimer);
 
+//assigning the radio buttons to id's which link later on to answers
         radioGroup = findViewById(R.id.radioGroup);
         rb1 = findViewById(R.id.rb1);
         rb2 = findViewById(R.id.rb2);
@@ -65,6 +66,7 @@ public class Quiz extends AppCompatActivity {
         totalQuestions = questionList.size();
         showNextQuestions();
 
+//allows you to select the button to make it function
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,7 +86,7 @@ public class Quiz extends AppCompatActivity {
         });
 
         }
-
+//turns the correct answer green and all the wrong answers red, and alo adds on score, next questions or finish qiuz
     private void checkAnswer() {
         answered = true;
             RadioButton rbSelected = findViewById(radioGroup.getCheckedRadioButtonId());
@@ -146,6 +148,7 @@ public class Quiz extends AppCompatActivity {
 
     }
 
+//timer
     private void timer() {
         countDownTimer = new CountDownTimer(20000,1000) {
             @Override
@@ -162,13 +165,13 @@ public class Quiz extends AppCompatActivity {
     }
 
 
-
+//Questions and answeres stored
     private void addQuestions() {
         questionList.add(new QuestionModel( "What is the Law of demand?", "Higher price, consumers will demand lower quantity","Price goes up, consumers will demand more","Price goes down, consumers will demand less", 1));
         questionList.add(new QuestionModel( "Subsidies shift which curve?",  "Demand",  "market equilibrium",  "supply", 3));
         questionList.add(new QuestionModel( "What is the Law of supply?",  "Lower price, consmers will demand more",  "The price of a good or service increases, the quantity of goods or service that suppliers offer will increase",  "Demand curve", 2));
         questionList.add(new QuestionModel("What causes a market to fail?",  "Failing any of the 5 conditions",  "Less supply in the economy",  "Increase in price", 1));
-        questionList.add(new QuestionModel("What can reduce consumption of a good or service?",  "Lower prices", "Increase in tax",  "Subsidise the economy", 2));
+        questionList.add(new QuestionModel("How to decrease consumption?",  "Lower prices", "Increase in tax",  "Subsidise the economy", 2));
 
     }
 }

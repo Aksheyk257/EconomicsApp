@@ -13,7 +13,7 @@ public class KamarPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kamar_page);
-
+//webview for kamar student portal
         WebView webView = (WebView) findViewById(R.id.webview2);
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("https://kamarportal.mrgs.school.nz/index.php/home");

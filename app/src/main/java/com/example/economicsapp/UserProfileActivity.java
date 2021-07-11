@@ -39,9 +39,10 @@ public class UserProfileActivity extends AppCompatActivity {
 
         String userName = preferences.getString("username", "");
         String userEmail = preferences.getString("useremail", "");
-        String userPhotoUrl = preferences.getString("userphoto", "");
+        String userPhotoUrl = preferences.getString("userPhoto", "");
 
-        tvUserName.setText(userName);
+// Displays the users username and email with a welcome preset text
+        tvUserName.setText("Welcome: "+ userName);
         tvUserEmail.setText(userEmail);
 
 //Using Glide Libary to obtain userPhoto url and pass into userImageView
@@ -51,7 +52,7 @@ public class UserProfileActivity extends AppCompatActivity {
            mAuth.signOut();
            startActivity(new Intent(UserProfileActivity.this, Login.class));
         });
-
+//directs to the home page
     }
     public void homepage (View view){
         Intent intent = new Intent(this, Homepage.class);

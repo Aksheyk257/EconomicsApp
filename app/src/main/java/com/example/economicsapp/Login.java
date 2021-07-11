@@ -35,7 +35,7 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+//Sign in button
         btnSignIn = findViewById(R.id.btnSignIn);
         mAuth = FirebaseAuth.getInstance();
         requestGoogleSinIn();
@@ -44,7 +44,7 @@ public class Login extends AppCompatActivity {
             signIn();
         });
     }
-
+//When the user successfully signs in they get redirected into the user profile activity page
     @Override
     protected void onStart() {
         super.onStart();
@@ -87,7 +87,7 @@ public class Login extends AppCompatActivity {
             try {
                 // Google Sign In was successful, authenticate with Firebase
                 GoogleSignInAccount account = task.getResult(ApiException.class);
-
+//obtains the users credentials when login is successful
                 firebaseAuthWithGoogle(account.getIdToken());
 
                 SharedPreferences.Editor editor = getApplicationContext()
@@ -107,7 +107,7 @@ public class Login extends AppCompatActivity {
             }
         }
     }
-
+// gets the users credentials through idToken
     private void firebaseAuthWithGoogle(String idToken) {
         AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
         mAuth.signInWithCredential(credential)

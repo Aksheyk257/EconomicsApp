@@ -25,12 +25,11 @@
             android:layout_height="wrap_content"
             android:layout_alignEnd="@+id/textTimer"
             android:layout_alignBottom="@+id/textTimer"
-            android:layout_marginEnd="59dp"
-            android:layout_marginBottom="-29dp"
+            android:layout_marginEnd="73dp"
+            android:layout_marginBottom="-76dp"
             android:text="Questions: 1/n"
             android:textColor="@color/white"
             android:textSize="17sp" />
-
 
         <TextView
             android:id="@+id/textScore"
@@ -46,12 +45,12 @@
 
         <TextView
             android:id="@+id/textTimer"
-            android:layout_width="168dp"
-            android:layout_height="64dp"
+            android:layout_width="187dp"
+            android:layout_height="96dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="81dp"
-            android:layout_marginBottom="528dp"
+            android:layout_marginEnd="71dp"
+            android:layout_marginBottom="557dp"
             android:text="00:20"
             android:textColor="@color/white"
             android:textSize="37sp" />
