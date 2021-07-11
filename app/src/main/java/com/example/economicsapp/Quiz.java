@@ -164,11 +164,11 @@ public class Quiz extends AppCompatActivity {
 
 
     private void addQuestions() {
-        questionList.add(new QuestionModel( "A is correct?", "A","B","C", 1));
-        questionList.add(new QuestionModel( "B is correct?",  "A",  "B",  "C", 2));
-        questionList.add(new QuestionModel( "C is correct?",  "A",  "B",  "C", 3));
-        questionList.add(new QuestionModel("A is correct?",  "A",  "B",  "C", 1));
-        questionList.add(new QuestionModel("B is correct?",  "A", "B",  "C", 2));
+        questionList.add(new QuestionModel( "What is the Law of demand?", "Higher price, consumers will demand lower quantity","Price goes up, consumers will demand more","Price goes down, consumers will demand less", 1));
+        questionList.add(new QuestionModel( "Subsidies shift which curve?",  "Demand",  "market equilibrium",  "supply", 3));
+        questionList.add(new QuestionModel( "What is the Law of supply?",  "Lower price, consmers will demand more",  "The price of a good or service increases, the quantity of goods or service that suppliers offer will increase",  "Demand curve", 2));
+        questionList.add(new QuestionModel("What causes a market to fail?",  "Failing any of the 5 conditions",  "Less supply in the economy",  "Increase in price", 1));
+        questionList.add(new QuestionModel("What can reduce consumption of a good or service?",  "Lower prices", "Increase in tax",  "Subsidise the economy", 2));
 
     }
 }

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "215768984086",
+    "project_id": "economicsqa",
+    "storage_bucket": "economicsqa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215768984086:android:06c6679d00804941c1e337",
+        "android_client_info": {
+          "package_name": "com.example.economicsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215768984086-tcl8geip1pbutmabn7jmoe1mc9d2g6p4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.economicsapp",
+            "certificate_hash": "ca881a91ffcb7b62b4cbd4bb39b78d972ce3372e"
+          }
+        },
+        {
+          "client_id": "215768984086-l5hukdvhl2hqtj2offjrfh9g98v8eo2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNm7OMMRhpTNzKTlPoc_Zav1-eQXlw7go"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215768984086-l5hukdvhl2hqtj2offjrfh9g98v8eo2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

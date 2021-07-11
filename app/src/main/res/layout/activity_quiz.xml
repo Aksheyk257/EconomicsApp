@@ -10,52 +10,62 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:padding="16dp">
+        app:layout_constraintVertical_bias="1.0">
+
 
         <TextView
+            android:id="@+id/textQuestionsNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textTimer"
+            android:layout_alignBottom="@+id/textTimer"
+            android:layout_marginEnd="59dp"
+            android:layout_marginBottom="-29dp"
             android:text="Questions: 1/n"
             android:textColor="@color/white"
-            android:textSize="17sp"
-            android:id="@+id/textQuestionsNo"/>
+            android:textSize="17sp" />
 
 
         <TextView
+            android:id="@+id/textScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Score: 0"
-            android:layout_below="@+id/textQuestionsNo"
-            android:textColor="@color/white"
-            android:textSize="17sp"
-            android:layout_marginTop="5dp"
-            android:id="@+id/textScore"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="00:20"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:textSize="37sp"
+            android:layout_marginTop="530dp"
+            android:layout_marginEnd="143dp"
+            android:text="Score: 0"
             android:textColor="@color/white"
-            android:id="@+id/textTimer"/>
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textTimer"
+            android:layout_width="168dp"
+            android:layout_height="64dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="81dp"
+            android:layout_marginBottom="528dp"
+            android:text="00:20"
+            android:textColor="@color/white"
+            android:textSize="37sp" />
 
         <TextView
             android:id="@+id/textQuestion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Questions will be here.."
             android:layout_above="@id/radioGroup"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="17dp"
+            android:text="Questions will be here.."
+            android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="25sp"
-            android:textAlignment="center"/>
-
-
+            android:textSize="25sp" />
 
         <RadioGroup
             android:id="@+id/radioGroup"
@@ -68,24 +78,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Option 1"
-                android:textSize="20sp"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:textSize="20sp" />
 
             <RadioButton
                 android:id="@+id/rb2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Option 2"
-                android:textSize="20sp"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:textSize="20sp" />
 
             <RadioButton
                 android:id="@+id/rb3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Option 3"
-                android:textSize="20sp"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:textSize="20sp" />
 
         </RadioGroup>
 
@@ -94,13 +104,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/radioGroup"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="11dp"
             android:text="Next"
-            android:textSize="20sp"
             android:textColor="@color/white"
-            android:textStyle="italic"/>
-
-
+            android:textSize="20sp"
+            android:textStyle="italic" />
 
 
     </RelativeLayout>
